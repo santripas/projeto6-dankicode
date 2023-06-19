@@ -235,6 +235,54 @@ section.parallax p{
     background-color: rgba(20, 20, 20, 0.6);
 }
 
+section.final-section{
+    padding: 50px 0;
+}
+
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+}
+
+section.final-section h2{
+    position: relative;
+    font-weight: lighter;
+    color: #777777;
+    font-size: 24px;
+}
+
+section.final-section h2 > .border-efeito{
+    width: 100px;
+    height: 2px;
+    background: #777;
+    position: absolute;
+}
+
+.contato input:not([type=submit]){
+    width: 100%;
+    height: 40px;
+    padding-bottom: 1px solid #ccc;
+    display: block;
+    padding-left: 8px;
+    margin-top: 10px;
+}
+
+.contato textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 1px solid #ccc;
+}
+
+.contato input[type=submit]{
+    cursor: pointer;
+    backdrop-filter: #2693FF;
+    color: white;
+    border: 0;
+    width: 100px;
+    height: 33px;
+    border-radius: 30px;
+}
 
 @media screen and (max-width:768px){
     .box-planos-single{
