@@ -67,6 +67,43 @@ section.main header{
     font-weight: bold;
 }
 
+nav.mobile{
+    display: none;
+    float: right;
+}
+
+nav.mobile > i{
+    position: relative;
+    top: 23px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+nav.mobile ul{
+    z-index: 2;
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 93px;
+    background: white;
+    list-style-type: none;
+}
+
+nav.mobile li{
+    font-weight: lighter;
+    border-bottom: 1px solid #444;
+    text-align: center;
+    padding: 8px 0;
+}
+
+nav.mobile a{
+    display: block;
+    text-decoration: none;
+    color: #444;
+}
+
 nav.desktop{
     float: right;
     margin-top: 20px;
@@ -90,9 +127,9 @@ nav.desktop a{
 
 .conteudo-header{
     position: relative;
-    z-index: 2;
+    z-index: 1;
     max-width: 700px;
-    margin: 90px 0;
+    margin: 110px 0;
 }
 
 .conteudo-header h2{
@@ -263,6 +300,7 @@ section.final-section h2 > .border-efeito{
 .contato input:not([type=submit]){
     width: 100%;
     height: 40px;
+    font-size: 15px;
     padding-bottom: 1px solid #ccc;
     display: block;
     padding-left: 8px;
@@ -279,7 +317,7 @@ section.final-section h2 > .border-efeito{
 
 .contato input[type=submit]{
     cursor: pointer;
-    backdrop-filter: #2693FF;
+    background: #2693FF;
     color: white;
     border: 0;
     width: 100px;
@@ -331,7 +369,21 @@ section.final-section h2 > .border-efeito{
     margin-top: 10px;
 }
 
+footer{
+    width: 100%;
+    padding: 10px 2%;
+    text-align: center;
+    color: white;
+    background: #444;
+
+}
+
 @media screen and (max-width:768px){
+
+    nav.mobile{display: block;}
+
+    nav.desktop{display: none;}
+
     .w50{
         width: 100%;
        

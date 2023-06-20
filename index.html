@@ -23,6 +23,7 @@
                 <div class="logo">
                     Danki Code
                 </div><!--logo-->
+
                 <nav class="desktop">
                     <ul>
                         <li><a href="">Home</a></li>
@@ -30,6 +31,15 @@
                         <li><a href="">Contato</a></li>
                     </ul>
                 </nav><!--desktop-->
+                <nav class="mobile">
+                    <i class="fa fa-bars"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul><!--mobile-->
+                </nav>
+
                 <div class="clear"></div><!--clear-->
             </header>
 
@@ -148,11 +158,34 @@
                     </div><!--descricao-usuario-box-->
                     
                 </div>
-            <div class="clear"></div><!--clear-->
-            </div>
+                <div class="w50 equipe-single">
 
-            <div class="w50 time">
-                <h2><div class="border-efeito"></div> Conheça nosso time!</h2>
+                    <div class="topo-box-usuario">
+                        <div class="box-avatar"></div><div class="info-usuario">
+                            <p style="font-weight: bold;">Guilherme Grillo</p>
+                            <p style="font-weight: italic;">CEO / Instrutor</p>
+                        </div>
+                    </div><!--topo-box-usuario-->
+
+                    <div class="descricao-usuario-box">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis rerum dolore consequatur hic dicta numquam quae officiis? Harum atque possimus, blanditiis vitae illo maxime recusandae rerum. Perferendis dolores tempora fugit quas quis nobis, aut alias voluptatem aliquam eaque totam qui minima vitae dolore illo omnis sequi ex eius repellendus accusamus?</p>
+                    </div><!--descricao-usuario-box-->
+                    
+                </div>
+                <div class="w50 equipe-single">
+
+                    <div class="topo-box-usuario">
+                        <div class="box-avatar"></div><div class="info-usuario">
+                            <p style="font-weight: bold;">Guilherme Grillo</p>
+                            <p style="font-weight: italic;">CEO / Instrutor</p>
+                        </div>
+                    </div><!--topo-box-usuario-->
+
+                    <div class="descricao-usuario-box">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis rerum dolore consequatur hic dicta numquam quae officiis? Harum atque possimus, blanditiis vitae illo maxime recusandae rerum. Perferendis dolores tempora fugit quas quis nobis, aut alias voluptatem aliquam eaque totam qui minima vitae dolore illo omnis sequi ex eius repellendus accusamus?</p>
+                    </div><!--descricao-usuario-box-->
+                    
+                </div>
                 <div class="w50 equipe-single">
 
                     <div class="topo-box-usuario">
@@ -169,9 +202,26 @@
                 </div>
             <div class="clear"></div><!--clear-->
             </div>
-
             <div class="clear"></div><!--clear-->
         </div><!--center-->
     </section><!--final-section-->
+
+    <footer>
+		<p>Todos os direitos reservados ao Projeto #6!</p>
+	</footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function(){
+            $('nav.mobile i').click(function(){
+                var el =$(this).parent().find('ul');
+                if(el.is(':visible') == false){
+                    el.fadeIn();
+                }else{
+                    el.fadeOut();
+                }
+            })
+        })
+    </script>
 </body>
 </html>
